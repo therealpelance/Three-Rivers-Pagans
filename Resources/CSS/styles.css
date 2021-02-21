@@ -39,7 +39,7 @@ Orange: rgb(213, 117, 0) #D57500
 }
 
 .mid-back {
-	background-color: rgb(102, 414, 60);
+	background-color: rgb(102, 141, 60);
 }
 
 .light-back {
@@ -62,12 +62,60 @@ Orange: rgb(213, 117, 0) #D57500
 	color: black;
 }
 
+.shadow-text {
+	text-shadow: 1px 1px 5px gray;
+}
+
+.shadow-box {
+	box-shadow: 2px 2px 5px gray;
+}
+
 /* Content Blocks */
 
 .text-block-light {
 	background-color: rgba(189, 208, 156, 0.5);
-	width: 60%;
-	margin: auto auto;
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+}
+
+/* Element Styles */
+
+h1 {
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+h2 {
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	font-size: 1.75rem;
+	font-weight: 700;
+	padding: 20px;
+}
+
+h3 {
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding: 20px;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 1.2;
+	
+}
+
+main {
+	display: grid;
+	grid-template: repeat(30, minmax(min-content, max-content)) / 10% repeat(10, 1fr) 10%;
+	grid-row-gap: 10px;
 }
 
 /* Header */
@@ -122,6 +170,28 @@ nav a:hover {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	width: 100%;
+	padding: 30px 0;
+}
+
+/* About Section */
+
+#about {
+	grid-area: 2 / 4 / span 1 / span 8;
+	padding: 30px;
+	margin-top: 10px;
+	z-index: 5;
+	}
+	
+.about-photo {
+	grid-area: 1 / 2 / span 3 / span 3;
+	max-width: 600px;
+	margin-top: 20px;
+	border: 10px solid whitesmoke;
+}
+
+.mission-text {
+	padding-bottom: 20px;
 }
 
 /* Media Queries */
@@ -137,5 +207,17 @@ nav a:hover {
 	
 	#title-block {
 		background-image: url("../Images/labyrinth_sm.jpg");
+	}
+	 main {
+		grid-template: repeat(30, minmax(min-content, max-content)) / 10% 80% 10%;
+	}
+	
+	.about-photo {
+		grid-area: 1 / 2 / span 1 / span 1;
+		max-width: 100%;
+	}
+	
+	#about {
+		grid-area: 2 / 2 / span 1 / span 1;
 	}
 }
