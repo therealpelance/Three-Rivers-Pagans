@@ -102,6 +102,22 @@ Orange: rgb(213, 117, 0) #D57500
 	
 }
 
+.body-text {
+	padding: 20px;
+}
+
+.light-divider {
+	width: 60%;
+	color: whitesmoke;
+}
+
+.image-insert-block {
+	display: block;
+	width: 30%;
+	margin: 10px auto;
+	border: 5px solid whitesmoke;
+}
+
 /* Element Styles */
 
 h1 {
@@ -274,6 +290,13 @@ nav a:hover {
 .card-button {
 	margin-top: auto;
 	margin-bottom: 20px;
+}
+
+/* Beliefs Sections */
+
+#beliefs {
+	grid-area: 5 / 2 / span 1 / span 10;
+	width: 100%;
 }
 
 /* Media Queries */
