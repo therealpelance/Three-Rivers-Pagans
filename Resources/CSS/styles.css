@@ -243,6 +243,7 @@ nav a:hover {
 
 .card {
 	max-width: 300px;
+	min-width: 260px;
 	margin: 10px 5px;
 	display: flex;
 	flex-flow: column;
@@ -250,6 +251,7 @@ nav a:hover {
 
 .card-img {
 	width: 100%;
+	max-width: 300px;
 }
 
 .card-lower {
@@ -276,7 +278,34 @@ nav a:hover {
 
 /* Media Queries */
 
+@media only screen and (max-width: 800px) {
+	
+	nav {
+		font-size: 1.5rem;
+	}
+	
+	main {
+		grid-template: repeat(30, minmax(min-content, max-content)) / 10% 40% 40% 10%;
+	}
+	
+	.about-photo {
+		grid-area: 1 / 2 / span 2 / span 2;
+		max-width: 100%;
+	}
+	
+	#about {
+		grid-area: 2 / 2 / span 1 / span 2;
+		max-width: 80%;
+		margin: 20px auto;
+	}
+	
+	#learn-more {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 600px) {
+	
 	nav ul {
 		flex-direction: column;
 	}
@@ -299,6 +328,7 @@ nav a:hover {
 	#title-block {
 		background-image: url("../Images/labyrinth_sm.jpg");
 	}
+	
 	 main {
 		grid-template: repeat(30, minmax(min-content, max-content)) / 10% 80% 10%;
 	}
