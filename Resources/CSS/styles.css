@@ -118,6 +118,10 @@ Orange: rgb(213, 117, 0) #D57500
 	border: 5px solid whitesmoke;
 }
 
+.body-link {
+	text-decoration: underline;
+}
+
 /* Element Styles */
 
 h1 {
@@ -299,6 +303,56 @@ nav a:hover {
 	width: 100%;
 }
 
+/* Rituals Section */
+
+#ritual {
+	grid-area: 6 / 2 / span 1 / span 10;
+	width: 100%
+}
+
+.date-block {
+	width: 50%;
+	margin: 20px auto 40px auto;
+	box-shadow: 10px 13px 36px -12px lightgray;
+}
+
+.date-block ul {
+	margin: 10px auto;
+	display: block;
+	text-align: center;
+	padding: 20px;
+	font-size: 1.1em;
+	line-height: 1.5;
+	font-weight: 700;
+}
+
+/* Events Section */
+
+#events {
+	grid-area: 7 / 2 / span 1 / span 10;
+}
+
+.event-logo {
+	display: block;
+	width: 150px;
+	margin: 10px auto;
+	border: 5px solid whitesmoke;
+}
+
+/* Join Us Section */
+
+#join {
+	grid-area: 9 / 2 / span 1 / span 8;
+	z-index: 5;
+}
+
+.join-photo {
+	grid-area: 8 / 8 / span 3 / span 3;
+	max-width: 600px;
+	margin-top: 20px;
+	border: 10px solid whitesmoke;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 800px) {
@@ -328,6 +382,28 @@ nav a:hover {
 	
 	#beliefs {
 		grid-area: 3 / 2 / span 1 / span 2;
+	}
+	
+	#ritual {
+		grid-area: 4 / 2 / span 1 / span 2;
+	}
+	
+	.date-block {
+		width: 70%;
+	}
+	
+	#events {
+		grid-area: 5 / 2 / span 1 / span 2;
+	}
+	
+	.join-photo {
+		grid-area: 6 / 2 / span 2 / span 2;
+	}
+	
+	#join {
+		grid-area: 7 / 2 / span 1 / span 2;
+		width: 80%;
+		margin: 20px auto;
 	}
 }
 
@@ -375,5 +451,26 @@ nav a:hover {
 	
 	#beliefs {
 		grid-area: 3 / 2 / span 1 / span 1;
+	}
+	
+	#ritual {
+		grid-area: 4 / 2 / span	1 / span 1;
+	}
+	
+	.date-block {
+		width: 80%;
+	}
+	
+	#events {
+		grid-area: 5 / 2 / span 1 / span 1;
+	}
+	
+	.join-photo {
+		grid-area: 6 / 2 / span 2 / span 1;
+		width: 100%;
+	}
+	
+	#join {
+		grid-area: 7 / 2 / span 1 / span 1;
 	}
 }
