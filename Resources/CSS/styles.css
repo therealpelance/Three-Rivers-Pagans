@@ -165,13 +165,20 @@ p {
 
 main {
 	display: grid;
-	grid-template: repeat(30, minmax(min-content, max-content)) / 10% repeat(10, 1fr) 10%;
+	grid-template: repeat(7, minmax(min-content, max-content)) / 10% repeat(10, 1fr) 10%;
 	grid-row-gap: 50px;
+	padding-bottom: 50px;
 }
 
 a {
 	text-decoration: none;
 	color: whitesmoke;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 /* Header */
@@ -353,6 +360,12 @@ nav a:hover {
 	border: 10px solid whitesmoke;
 }
 
+/* Footer */
+
+.icon-lg {
+	font-size: 4rem;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 800px) {
@@ -362,7 +375,7 @@ nav a:hover {
 	}
 	
 	main {
-		grid-template: repeat(30, minmax(min-content, max-content)) / 10% 40% 40% 10%;
+		grid-template: repeat(7, minmax(min-content, max-content)) / 10% 40% 40% 10%;
 	}
 	
 	.about-photo {
@@ -433,7 +446,7 @@ nav a:hover {
 	}
 	
 	 main {
-		grid-template: repeat(30, minmax(min-content, max-content)) / 10% 80% 10%;
+		grid-template: repeat(7, minmax(min-content, max-content)) / 10% 80% 10%;
 	}
 	
 	.about-photo {
